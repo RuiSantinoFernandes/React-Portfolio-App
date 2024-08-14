@@ -1,0 +1,111 @@
+.gallery {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: darkolivegreen;
+}
+
+main{
+  background-color: darkolivegreen;
+}
+
+.Gallery-header {
+  background-image: url("./Album/Icarus.jpg");
+  padding: 80px;
+  background-position: center; /* Center the image */
+  background-size: cover;
+  background-blend-mode: lighten;
+  font-family: freight-big-pro;
+  font-weight: lighter;
+  font-size: 28px;
+  color: DarkOliveGreen;
+  text-align: center;
+}
+
+.gallery-photo {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.06);
+}
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
