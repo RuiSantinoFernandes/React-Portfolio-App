@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio-App/static/css/main.bee19e50.css",
+    "main.js": "/React-Portfolio-App/static/js/main.ada27c19.js",
+    "static/media/BrooklynTowerHD.jpg": "/React-Portfolio-App/static/media/BrooklynTowerHD.7e0f428b200dfe88f1b0.jpg",
+    "static/media/NavyYardPlant.jpg": "/React-Portfolio-App/static/media/NavyYardPlant.4888b80ef2a8c7f2f4df.jpg",
+    "static/media/WilliamsburgBridge.jpg": "/React-Portfolio-App/static/media/WilliamsburgBridge.068907b06861bbeb10dd.jpg",
+    "static/media/Icarus.jpg": "/React-Portfolio-App/static/media/Icarus.638d6322d0a82d2ba277.jpg",
+    "static/media/Airplane.jpg": "/React-Portfolio-App/static/media/Airplane.4100f3ce679d63fd8618.jpg",
+    "static/media/DreamyBT.jpg": "/React-Portfolio-App/static/media/DreamyBT.80bbc36c194c5b1a93f3.jpg",
+    "static/media/SAPortrait.jpg": "/React-Portfolio-App/static/media/SAPortrait.affe859b22ee1707bf8a.jpg",
+    "static/media/TheWindows.jpg": "/React-Portfolio-App/static/media/TheWindows.19e5f15a85d452fffa25.jpg",
+    "index.html": "/React-Portfolio-App/index.html",
+    "main.bee19e50.css.map": "/React-Portfolio-App/static/css/main.bee19e50.css.map",
+    "main.ada27c19.js.map": "/React-Portfolio-App/static/js/main.ada27c19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bee19e50.css",
+    "static/js/main.ada27c19.js"
+  ]
+}
