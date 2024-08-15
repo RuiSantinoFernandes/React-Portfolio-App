@@ -80,15 +80,8 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
   }
   
-  .Airplane {
-    background-image: url("./Album/Airplane.jpg");
-  }
-  
   .DreamyBT {
     background-image: url("./Album/DreamyBT.jpg");
-  }
-  .TheWindows {
-    background-image: url("./Album/TheWindows.jpg");
   }
   .WilliamsburgBridge {
     background-image: url("./Album/WilliamsburgBridge.jpg");
@@ -118,7 +111,7 @@
   }
   
   .img:hover {
-    flex: 3;
+    flex: 1.5;
   }
   
   .img:hover p {

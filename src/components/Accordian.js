@@ -4,16 +4,8 @@ import "./Home.css";
 const Accordian = () => {
   return (
     <div className="img-accordion">
-      <div className="img Airplane">
-        <p>UFV</p>
-      </div>
-
       <div className="img DreamyBT">
         <p>BT Dreams</p>
-      </div>
-
-      <div className="img TheWindows">
-        <p>Yellow</p>
       </div>
 
       <div className="img WilliamsburgBridge">

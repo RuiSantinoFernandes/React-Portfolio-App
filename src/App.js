@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 export default function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Nav />
         <Routes>
           <Route exact path="/" element={<Home />} />
