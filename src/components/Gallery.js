@@ -5,6 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/plugins/counter.css";
+import { SocialIcon } from 'react-social-icons';
 
 function Gallery() {
 
@@ -112,8 +113,20 @@ function Gallery() {
         slides={photos}
         plugins={[Counter]}
       />
-      
-
+      <footer className="Links">
+      <h1>Social Links</h1>
+        <SocialIcon
+          network="linkedin" 
+          url="https://www.linkedin.com/in/rui-fernandes-567409171/" 
+          style={{ height: 75, width: 75 }} 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <SocialIcon 
+          network="github" 
+          url="https://github.com/RuiSantinoFernandes" 
+          style={{ height: 75, width: 75 }}
+        />
+      </footer>
       </main>
     </div>
   );

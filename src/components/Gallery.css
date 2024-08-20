@@ -91,6 +91,22 @@ main {
   transform: scale(1.06);
 }
 
+.Links {
+  padding: 45px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: darkolivegreen;
+}
+
+.Links h1 {
+  padding-bottom: 40px;
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
+    Sylfaen, serif;
+  font-weight: lighter;
+  font-size: 22px;
+  color: bisque;
+}
+
 html,
 body,
 body div,
