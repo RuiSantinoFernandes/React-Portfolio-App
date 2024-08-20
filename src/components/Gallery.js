@@ -1,8 +1,10 @@
 import React from "react";
+import {useState} from "react";
 import "./Gallery.css";
-// import {SlideshowLightbox} from 'lightbox.js-react'
-// import 'lightbox.js-react/dist/index.css'
-
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import "yet-another-react-lightbox/plugins/counter.css";
 
 function Gallery() {
 
@@ -34,28 +36,37 @@ function Gallery() {
     { src: "./Album/WaterTower.jpg", alt: "Photo 25" },
   ];
 
-  // let [isOpen, setIsOpen] = useState(false);
-
+  const [Open, setOpen] = useState(false);
+  const [imageToShow, setImageToShow] = useState('')
+  const showImage = (photo) => {
+    setImageToShow(photo);
+    setOpen(true);
+  };
   return (
     <div>
       <header className="Gallery-header">
         <h1>GALLERY</h1>
       </header>
-      {/* <button onClick={() => {setIsOpen(true)}}>
-        Open Lightbox
-      </button>
-      <SlideshowLightbox 
-        theme="lightbox"
-        images={photos} 
-        showThumbnails={true} 
-        open={isOpen} 
-        lightboxIdentifier="lbox1"
-        onClose={() =>{setIsOpen(false)}}>     
-      </SlideshowLightbox> */}
+      <div className="Quote">
+        <body>“A good photograph is knowing where to stand.”</body>
+      </div>
+      <header className="h2">
+        - Ansel Adams 
+      </header>
+      <div className="Desc">
+        <body>(American Photographer & Environmentalist
+        )</body>
+      </div>
+      <div className="Body">
+        <body>Click on an image to expand slideshow.</body>
+      </div>
+      
       <main>
-        <div className="gallery">
+      
+      <div className="gallery">
           {photos.map((photo, index) => (
             <img
+              onClick={() => showImage(photo)}
               key={index}
               src={photo.src}
               alt={photo.alt}
@@ -63,6 +74,15 @@ function Gallery() {
             />
           ))}
         </div>
+
+      <Lightbox
+        open={Open}
+        close={() => setOpen(false)}
+        slides={photos}
+        plugins={[Counter]}
+      />
+      
+
       </main>
     </div>
   );

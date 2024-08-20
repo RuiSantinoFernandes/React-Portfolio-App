@@ -7,8 +7,63 @@
   background-color: darkolivegreen;
 }
 
-main{
+main {
   background-color: darkolivegreen;
+}
+
+.Quote {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: darkolivegreen;
+  padding-top: 25px;
+  color: bisque;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.h2 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: darkolivegreen;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: bisque;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Desc {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: darkolivegreen;
+  padding-top: 2px;
+  color: bisque;
+  font-size: 12px
+}
+
+.Body {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: darkolivegreen;
+  padding: 25px;
+  color: black;
+  font-size: 20px;
+}
+
+.button {
+  padding-bottom: 50px;
 }
 
 .Gallery-header {
