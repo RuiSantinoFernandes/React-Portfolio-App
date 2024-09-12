@@ -1,131 +1,99 @@
 import React from "react";
-import {useState} from "react";
-import "./Gallery.css";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Counter from "yet-another-react-lightbox/plugins/counter";
-import "yet-another-react-lightbox/plugins/counter.css";
-import { SocialIcon } from 'react-social-icons';
+import { useState } from "react";
+import "./Gallery.css"; // Import CSS styles for the gallery
+import Lightbox from "yet-another-react-lightbox"; // Lightbox for slideshow capabilities of portfolio photos
+import "yet-another-react-lightbox/styles.css"; // Lightbox styles
+import Counter from "yet-another-react-lightbox/plugins/counter"; // Counter plugin for showing photo positions in Lightbox
+import "yet-another-react-lightbox/plugins/counter.css"; // Counter plugin styles
+import { SocialIcon } from 'react-social-icons'; // Social icons for external profile links
+import { photos } from './photos';  // Import array of photos for the gallery
 
 function Gallery() {
-
-  const photos = [
-    { src: "./Album/Airplane.jpg", alt: "Photo 1" },
-    { src: "./Album/BlackDoor.jpg", alt: "Photo 2" },
-    { src: "./Album/BrooklynTowerHD.jpg", alt: "Photo 3" },
-    { src: "./Album/DreamyBT.jpg", alt: "Photo 6" },
-    { src: "./Album/GraffitiMailbox.jpg", alt: "Photo 7" },
-    { src: "./Album/Icarus.jpg", alt: "Photo 8" },
-    { src: "./Album/NavyYardPlant.jpg", alt: "Photo 9" },
-    { src: "./Album/TheWindows.jpg", alt: "Photo 10" },
-    { src: "./Album/WilliamsburgBridge.jpg", alt: "Photo 11" },
-    { src: "./Album/Apocalypse.jpg", alt: "Photo 12" },
-    { src: "./Album/Apts.jpg", alt: "Photo 13" },
-    { src: "./Album/BillboardPink.jpg", alt: "Photo 14" },
-    { src: "./Album/Brooklyn.jpg", alt: "Photo 15" },
-    { src: "./Album/Communication.jpg", alt: "Photo 16" },
-    { src: "./Album/Creep.jpg", alt: "Photo 17" },
-    { src: "./Album/Firetruck.jpg", alt: "Photo 18" },
-    { src: "./Album/HeadHi.jpg", alt: "Photo 19" },
-    { src: "./Album/Ledge.jpg", alt: "Photo 20" },
-    { src: "./Album/Levels.jpg", alt: "Photo 21" },
-    { src: "./Album/NightCommuter.jpg", alt: "Photo 22" },
-    { src: "./Album/Projects.jpg", alt: "Photo 23" },
-    { src: "./Album/WaterTower.jpg", alt: "Photo 25" },
-    { src: "./Album/Apts2.jpg", alt: "Photo 26" },
-    { src: "./Album/Autumn.jpg", alt: "Photo 27" },
-    { src: "./Album/BrokklynLightHouse.jpg", alt: "Photo 28" },
-    { src: "./Album/Chip.jpg", alt: "Photo 29" },
-    { src: "./Album/Chip2.jpg", alt: "Photo 30" },
-    { src: "./Album/ClockTowerBG.jpg", alt: "Photo 31" },
-    { src: "./Album/Commute.jpg", alt: "Photo 32" },
-    { src: "./Album/ManhattanSkyline.jpg", alt: "Photo 38" },
-    { src: "./Album/MRFantasy.jpg", alt: "Photo 39" },
-    { src: "./Album/MRPond1.jpg", alt: "Photo 40" },
-    { src: "./Album/MRPond2.jpg", alt: "Photo 41" },
-    { src: "./Album/MRPurplePond.jpg", alt: "Photo 42" },
-    { src: "./Album/MTR1.jpg", alt: "Photo 43" },
-    { src: "./Album/MTR2.jpg", alt: "Photo 44" },
-    { src: "./Album/MTR3.jpg", alt: "Photo 45" },
-    { src: "./Album/MTR4.jpg", alt: "Photo 46" },
-    { src: "./Album/MTR5.jpg", alt: "Photo 47" },
-    { src: "./Album/OGSkyline.jpg", alt: "Photo 48" },
-    { src: "./Album/OntheRoad.jpg", alt: "Photo 49" },
-    { src: "./Album/OPSkyline.jpg", alt: "Photo 50" },
-    { src: "./Album/PinkSkies.jpg", alt: "Photo 51" },
-    { src: "./Album/PurpleProjects.jpg", alt: "Photo 52" },
-    { src: "./Album/PurpleSkyline.jpg", alt: "Photo 53" },
-    { src: "./Album/RunningOutofTime.jpg", alt: "Photo 55" },
-    { src: "./Album/SteveWalking.jpg", alt: "Photo 56" },
-    { src: "./Album/TwoBirds.jpg", alt: "Photo 57" },
-    { src: "./Album/UndertheBridge.jpg", alt: "Photo 58" },
-    { src: "./Album/VerticalOGApt.jpg", alt: "Photo 59" },
-    { src: "./Album/VerticalSkyline.jpg", alt: "Photo 60" },
-    { src: "./Album/Washingtopn.jpg", alt: "Photo 61" },
-  ];
-
+  
+  // State to control the lightbox's open/close state and track the currently displayed image
   const [Open, setOpen] = useState(false);
-  const [imageToShow, setImageToShow] = useState('')
+  const [imageToShow, setImageToShow] = useState('');
+
+  // Function to show an image in the lightbox when clicked
   const showImage = (photo) => {
     setImageToShow(photo);
-    setOpen(true);
+    setOpen(true); // Opens the lightbox when an image is clicked
   };
+
   return (
     <div>
+      {/* Header section with the title */}
       <header className="Gallery-header">
         <h1>GALLERY</h1>
       </header>
+
+      {/* Quote section */}
       <div className="Quote">
         <body>“A good photograph is knowing where to stand.”</body>
       </div>
+
+      {/* Author of the quote */}
       <header className="h2">
         - Ansel Adams 
       </header>
+
+      {/* Description of the author */}
       <div className="Desc">
-        <body>(American Photographer & Environmentalist
-        )</body>
+        <body>(American Photographer & Environmentalist)</body>
       </div>
+
+      {/* Instructions for the user */}
       <div className="Body">
         <body>Click on an image to expand slideshow.</body>
       </div>
       
       <main>
-      
-      <div className="gallery">
+        {/* Gallery grid displaying all photos */}
+        <div className="gallery">
           {photos.map((photo, index) => (
             <img
-              onClick={() => showImage(photo)}
-              key={index}
-              src={photo.src}
-              alt={photo.alt}
-              className="gallery-photo"
+              onClick={() => showImage(photo)}   // Set image on click to open lightbox
+              key={index}                        // Unique key for each photo
+              src={photo.src}                    // Photo source
+              alt={photo.alt}                    // Alt text for accessibility
+              className="gallery-photo"          // CSS class for styling gallery photos
             />
           ))}
         </div>
 
-      <Lightbox
-        open={Open}
-        close={() => setOpen(false)}
-        slides={photos}
-        plugins={[Counter]}
-      />
-      <footer className="Links">
-      <h1>Social Links</h1>
-        <SocialIcon
-          network="linkedin" 
-          url="https://www.linkedin.com/in/rui-fernandes-567409171/" 
-          style={{ height: 75, width: 75 }} 
+        {/* Lightbox component with the Counter plugin */}
+        <Lightbox
+          open={Open}               // Lightbox open state
+          close={() => setOpen(false)}  // Close lightbox
+          slides={photos}           // Slides array (photos)
+          plugins={[Counter]}       // Counter plugin for slide numbers
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <SocialIcon 
-          network="github" 
-          url="https://github.com/RuiSantinoFernandes" 
-          style={{ height: 75, width: 75 }}
-        />
-      </footer>
+      
+        {/* Footer section with social media links */}
+        <footer className="Links">
+          <h1>Social Links</h1>
+          
+          {/* LinkedIn social icon */}
+          <SocialIcon
+            network="linkedin" 
+            url="https://www.linkedin.com/in/rui-fernandes-567409171/" 
+            style={{ height: 75, width: 75 }}  // Icon size
+          />
+          
+          {/* Spacing between social icons */}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          {/* GitHub social icon */}
+          <SocialIcon 
+            network="github" 
+            url="https://github.com/RuiSantinoFernandes" 
+            style={{ height: 75, width: 75 }}  // Icon size
+          />
+        </footer>
       </main>
     </div>
   );
 }
 
 export default Gallery;
+

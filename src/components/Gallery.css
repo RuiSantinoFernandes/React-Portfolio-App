@@ -1,112 +1,124 @@
+/* General gallery layout */
 .gallery {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  background-color: darkolivegreen;
+  text-align: center;               /* Center-align the content */
+  display: flex;                    /* Use flexbox for layout */
+  flex-wrap: wrap;                  /* Allow items to wrap to the next line */
+  gap: 10px;                        /* Space between items */
+  justify-content: center;          /* Center the flex items */
+  background-color: darkolivegreen; /* Set the background color */
 }
 
+/* Main section background color */
 main {
   background-color: darkolivegreen;
 }
 
+/* Quote section styling */
 .Quote {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  background-color: darkolivegreen;
-  padding-top: 25px;
-  color: bisque;
-  font-size: 28px;
-  font-weight: lighter;
+  text-align: center;               /* Center-align the text */
+  display: flex;                    /* Use flexbox for layout */
+  flex-wrap: wrap;                  /* Allow items to wrap */
+  gap: 10px;                        /* Space between items */
+  justify-content: center;          /* Center the flex items */
+  background-color: darkolivegreen; /* Background color */
+  padding-top: 25px;                /* Padding at the top */
+  color: bisque;                    /* Text color */
+  font-size: 28px;                  /* Font size */
+  font-weight: lighter;             /* Light font weight */
 }
 
+/* Styling for sub-header (h2) */
 .h2 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  background-color: darkolivegreen;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: bisque;
-  font-size: 22px;
-  font-weight: bold;
+  text-align: center;               /* Center-align the text */
+  display: flex;                    /* Use flexbox for layout */
+  flex-wrap: wrap;                  /* Allow items to wrap */
+  gap: 10px;                        /* Space between items */
+  justify-content: center;          /* Center the flex items */
+  background-color: darkolivegreen; /* Background color */
+  padding-top: 5px;                 /* Padding at the top */
+  padding-bottom: 5px;              /* Padding at the bottom */
+  color: bisque;                    /* Text color */
+  font-size: 22px;                  /* Font size */
+  font-weight: bold;                /* Bold font weight */
 }
 
+/* Description section styling */
 .Desc {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  background-color: darkolivegreen;
-  padding-top: 2px;
-  color: bisque;
-  font-size: 12px
+  text-align: center;               /* Center-align the text */
+  display: flex;                    /* Use flexbox for layout */
+  flex-wrap: wrap;                  /* Allow items to wrap */
+  gap: 10px;                        /* Space between items */
+  justify-content: center;          /* Center the flex items */
+  background-color: darkolivegreen; /* Background color */
+  padding-top: 2px;                 /* Padding at the top */
+  color: bisque;                    /* Text color */
+  font-size: 12px;                  /* Font size */
 }
 
+/* Body content styling */
 .Body {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  background-color: darkolivegreen;
-  padding: 25px;
-  color: black;
-  font-size: 20px;
+  text-align: center;               /* Center-align the text */
+  display: flex;                    /* Use flexbox for layout */
+  flex-wrap: wrap;                  /* Allow items to wrap */
+  gap: 10px;                        /* Space between items */
+  justify-content: center;          /* Center the flex items */
+  background-color: darkolivegreen; /* Background color */
+  padding: 25px;                    /* Padding around the content */
+  color: black;                     /* Text color */
+  font-size: 20px;                  /* Font size */
 }
 
+/* Button styling */
 .button {
-  padding-bottom: 50px;
+  padding-bottom: 50px;             /* Padding at the bottom */
 }
 
+/* Gallery header styling */
 .Gallery-header {
-  background-image: url("./Album/Icarus.jpg");
-  padding: 80px;
-  background-position: center; /* Center the image */
-  background-size: cover;
-  background-blend-mode: lighten;
-  font-family: freight-big-pro;
-  font-weight: lighter;
-  font-size: 28px;
-  color: DarkOliveGreen;
-  text-align: center;
+  background-image: url("./Album/Icarus.jpg"); /* Background image */
+  padding: 80px;                               /* Padding */
+  background-position: center;                 /* Center the image */
+  background-size: cover;                      /* Cover the entire area */
+  background-blend-mode: lighten;              /* Blend mode for background */
+  font-family: freight-big-pro;                /* Font family */
+  font-weight: lighter;                        /* Light font weight */
+  font-size: 28px;                             /* Font size */
+  color: DarkOliveGreen;                       /* Text color */
+  text-align: center;                          /* Center-align the text */
 }
 
+/* Individual gallery photo styling */
 .gallery-photo {
-  width: 350px;
-  height: 400px;
-  object-fit: cover;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.5s ease;
+  width: 350px;                                /* Width of the image */
+  height: 400px;                               /* Height of the image */
+  object-fit: cover;                           /* Maintain aspect ratio */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);   /* Shadow for the images */
+  transition: transform 0.5s ease;             /* Smooth transition on hover */
 }
 
+/* Hover effect for gallery photos */
 .gallery-photo:hover {
-  transform: scale(1.06);
+  transform: scale(1.06);                      /* Slight zoom on hover */
 }
 
+/* Links section styling */
 .Links {
-  padding: 45px;
-  padding-bottom: 70px;
-  text-align: center;
-  background-color: darkolivegreen;
+  padding: 45px;                               /* Padding around the links */
+  padding-bottom: 70px;                        /* Extra padding at the bottom */
+  text-align: center;                          /* Center-align the links */
+  background-color: darkolivegreen;            /* Background color */
 }
 
+/* Links header styling */
 .Links h1 {
-  padding-bottom: 40px;
-  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-    Sylfaen, serif;
-  font-weight: lighter;
-  font-size: 22px;
-  color: bisque;
+  padding-bottom: 40px;                        /* Padding at the bottom */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif; /* Font family */
+  font-weight: lighter;                        /* Light font weight */
+  font-size: 22px;                             /* Font size */
+  color: bisque;                               /* Text color */
 }
 
+/* Reset styles for HTML elements */
 html,
 body,
 body div,
@@ -172,11 +184,11 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+  margin: 0;                                 /* Remove default margins */
+  padding: 0;                                /* Remove default padding */
+  border: 0;                                 /* Remove default borders */
+  outline: 0;                                /* Remove outline */
+  font-size: 100%;                           /* Set font size to default */
+  vertical-align: baseline;                  /* Set vertical alignment */
+  background: transparent;                   /* Transparent background */
 }

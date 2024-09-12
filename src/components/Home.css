@@ -1,209 +1,229 @@
+/* Main container for the Home section */
 .Home {
   align-items: center;
   text-align: center;
-    background-color: darkolivegreen;
-  }
-  .Home-header {
-    background-image: url("./Album/Icarus.jpg");
-    padding: 80px;
-    background-position: center; /* Center the image */
-    background-size: cover;
-    background-blend-mode: lighten;
-    font-family: freight-big-pro;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 28px;
-    color: DarkOliveGreen;
-  }
-  
-  .main {
-    background-color: darkolivegreen;
-    padding: 40px;
-    padding-top: 50px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 20px;
-    color: bisque;
-  }
-  
-  .main h2 {
-    padding-top: 50px;
-    background-color: darkolivegreen;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 16px;
-    color: black;
-  }
-  .View {
-    padding: 10px;
-    background-color: darkolivegreen;
-  }
-  
-  .gallery-photo {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.5s ease;
-  }
-  
-  /* body {
-    background-color: bisque;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  
-  .img-accordion {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    object-fit: cover;
-  }
-  
-  .img {
-    flex: 1;
-    height: 100%;
-    width: 60px;
-    transform: skew(0deg);
-    cursor: pointer;
-    margin: 0 2px;
-    transition: all 0.6s;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-  }
-  
-  .DreamyBT {
-    background-image: url("./Album/DreamyBT.jpg");
-  }
-  .WilliamsburgBridge {
-    background-image: url("./Album/WilliamsburgBridge.jpg");
-  }
-  .NavyYardPlant {
-    background-image: url("./Album/NavyYardPlant.jpg");
-  }
-  .BrooklynTowerHD {
-    background-image: url("./Album/BrooklynTowerHD.jpg");
-  }
-  
-  .img p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 5px;
-    color: bisque;
-    transform: rotate(-90deg);
-    transform-origin: 0% 0%;
-    transition: all 0.6s;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-  
-  .img-accordion:hover .img {
-    transform: skew(0);
-  }
-  
-  .img:hover {
-    flex: 1.5;
-  }
-  
-  .img:hover p {
-    background-color: rgba(0, 0, 0, 0.2);
-    transform: rotate(0deg);
-  }
+  background-color: darkolivegreen;
+}
 
-  .Links {
-    padding: 45px;
-    padding-bottom: 70px;
-  }
+/* Styling for the header section of the Home */
+.Home-header {
+  background-image: url("./Album/Icarus.jpg");
+  padding: 80px;
+  background-position: center; /* Center the image */
+  background-size: cover;
+  background-blend-mode: lighten;
+  font-family: freight-big-pro;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 28px;
+  color: DarkOliveGreen;
+}
 
-  .Links h1 {
-    padding-bottom: 40px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 22px;
-    color: bisque;
-  }
-  
-  html,
-  body,
-  body div,
-  span,
-  object,
-  iframe,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  abbr,
-  address,
-  cite,
-  code,
-  del,
-  dfn,
-  em,
-  img,
-  ins,
-  kbd,
-  q,
-  samp,
-  small,
-  strong,
-  sub,
-  sup,
-  var,
-  b,
-  i,
-  dl,
-  dt,
-  dd,
-  ol,
-  ul,
-  li,
-  fieldset,
-  form,
-  label,
-  legend,
-  table,
-  caption,
-  tbody,
-  tfoot,
-  thead,
-  tr,
-  th,
-  td,
-  article,
-  aside,
-  figure,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  section,
-  time,
-  mark,
-  audio,
-  video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
-  
+/* Main content area styling */
+.main {
+  background-color: darkolivegreen;
+  padding: 40px;
+  padding-top: 50px;
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: bisque;
+}
+
+/* Styling for <h2> elements in the main content */
+.main h2 {
+  padding-top: 50px;
+  background-color: darkolivegreen;
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+/* View section styling */
+.View {
+  padding: 10px;
+  background-color: darkolivegreen;
+}
+
+/* Gallery photo styling */
+.gallery-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+}
+
+/* Commented out body background styling */
+/*
+body {
+  background-color: bisque;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+/* Image accordion container styling */
+.img-accordion {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  object-fit: cover;
+}
+
+/* Individual image styling inside accordion */
+.img {
+  flex: 1;
+  height: 100%;
+  width: 60px;
+  transform: skew(0deg);
+  cursor: pointer;
+  margin: 0 2px;
+  transition: all 0.6s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Specific image backgrounds for each accordion panel */
+.DreamyBT {
+  background-image: url("./Album/DreamyBT.jpg");
+}
+
+.WilliamsburgBridge {
+  background-image: url("./Album/WilliamsburgBridge.jpg");
+}
+
+.NavyYardPlant {
+  background-image: url("./Album/NavyYardPlant.jpg");
+}
+
+.BrooklynTowerHD {
+  background-image: url("./Album/BrooklynTowerHD.jpg");
+}
+
+/* Text inside each accordion image */
+.img p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  color: bisque;
+  transform: rotate(-90deg); /* Rotated text */
+  transform-origin: 0% 0%;
+  transition: all 0.6s;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Hover effect on accordion image container */
+.img-accordion:hover .img {
+  transform: skew(0);
+}
+
+/* Hover effect on individual images */
+.img:hover {
+  flex: 1.5; /* Increase flex value on hover */
+}
+
+/* Hover effect on text inside image */
+.img:hover p {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: rotate(0deg); /* Rotate text back to normal */
+}
+
+/* Social links section styling */
+.Links {
+  padding: 45px;
+  padding-bottom: 70px;
+}
+
+/* Social links header styling */
+.Links h1 {
+  padding-bottom: 40px;
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+  font-weight: lighter;
+  font-size: 22px;
+  color: bisque;
+}
+
+/* Resetting default browser styles for elements */
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}

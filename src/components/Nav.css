@@ -1,36 +1,42 @@
+/* Navigation container */
 .nav {
-    display: flex;
-    justify-content: center;
-    background-color: darkolivegreen;
-    padding: 10px;
-  }
-  
-  .nav a {
-    transition: all 0.6s;
-    margin-right: 20px;
-    font-family: freight-big-pro;
-    font-weight: lighter;
-    color: bisque;
-    text-decoration: none;
-  }
-  
-  .nav a:hover {
-    color: rgb(32, 39, 29);
-    z-index: 1;
-  }
-  
-  nav a:after {
-    text-align: left;
-    content: "";
-    margin: 0;
-    opacity: 0;
-  }
-  
-  nav a:hover:after {
-    z-index: -10;
-    animation: fill 0.5s forwards;
-    -webkit-animation: fill 0.5s forwards;
-    -moz-animation: fill 0.5s forwards;
-    opacity: 0.5;
-  }
+  display: flex; /* Displaying items in a flexbox */
+  justify-content: center; /* Center the navigation items */
+  background-color: darkolivegreen; /* Background color of the navigation bar */
+  padding: 10px; /* Padding around the navigation items */
+}
+
+/* Styling for navigation links */
+.nav a {
+  transition: all 0.6s; /* Smooth transition for hover effects */
+  margin-right: 20px; /* Space between navigation links */
+  font-family: freight-big-pro; /* Font family for the links */
+  font-weight: lighter; /* Lighter font weight */
+  color: bisque; /* Initial text color */
+  text-decoration: none; /* Removing underline from links */
+}
+
+/* Hover effect for navigation links */
+.nav a:hover {
+  color: rgb(32, 39, 29); /* Text color on hover */
+  z-index: 1; /* Bringing the link in front on hover */
+}
+
+/* Styling for link pseudo-element */
+nav a:after {
+  text-align: left; /* Aligning text to the left */
+  content: ""; /* Empty content for the pseudo-element */
+  margin: 0; /* No margin */
+  opacity: 0; /* Initially invisible */
+}
+
+/* Hover effect for link pseudo-element */
+nav a:hover:after {
+  z-index: -10; /* Setting the pseudo-element behind */
+  animation: fill 0.5s forwards; /* Animation to fill */
+  -webkit-animation: fill 0.5s forwards; /* Webkit-specific animation */
+  -moz-animation: fill 0.5s forwards; /* Moz-specific animation */
+  opacity: 0.5; /* Setting opacity to 50% on hover */
+}
+
   

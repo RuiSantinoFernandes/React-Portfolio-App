@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Portfolio-App/static/css/main.5410a9de.css",
-    "main.js": "/React-Portfolio-App/static/js/main.dfc845cf.js",
+    "main.js": "/React-Portfolio-App/static/js/main.e91adc1b.js",
     "static/media/BrooklynTowerHD.jpg": "/React-Portfolio-App/static/media/BrooklynTowerHD.7e0f428b200dfe88f1b0.jpg",
     "static/media/NavyYardPlant.jpg": "/React-Portfolio-App/static/media/NavyYardPlant.4888b80ef2a8c7f2f4df.jpg",
     "static/media/WilliamsburgBridge.jpg": "/React-Portfolio-App/static/media/WilliamsburgBridge.068907b06861bbeb10dd.jpg",
@@ -9,10 +9,10 @@
     "static/media/DreamyBT.jpg": "/React-Portfolio-App/static/media/DreamyBT.80bbc36c194c5b1a93f3.jpg",
     "index.html": "/React-Portfolio-App/index.html",
     "main.5410a9de.css.map": "/React-Portfolio-App/static/css/main.5410a9de.css.map",
-    "main.dfc845cf.js.map": "/React-Portfolio-App/static/js/main.dfc845cf.js.map"
+    "main.e91adc1b.js.map": "/React-Portfolio-App/static/js/main.e91adc1b.js.map"
   },
   "entrypoints": [
     "static/css/main.5410a9de.css",
-    "static/js/main.dfc845cf.js"
+    "static/js/main.e91adc1b.js"
   ]
 }

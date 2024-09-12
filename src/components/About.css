@@ -1,177 +1,187 @@
+/* General container styling for the 'About' section */
 .About {
-    align-content: center;
-    background-color: darkolivegreen;
-  }
-  .About-header {
-    background-image: url("./Album/Icarus.jpg");
-    padding: 80px;
-    text-align: center;
-    background-position: center; /* Center the image */
-    background-size: cover;
-    background-blend-mode: lighten;
-    font-family: freight-big-pro;
-    font-weight: lighter;
-    font-size: 28px;
-    color: DarkOliveGreen;
-  }
-  
-  .Sub-header {
-    display: flex;
-    align-items: center;
-    background-color: darkolivegreen;
-  }
+  align-content: center;
+  background-color: darkolivegreen; /* Set background color */
+}
 
-  .column {
-    flex: 50%;
-    padding: 50px;
-    text-align: center;
-    font-family: freight-big-pro;
-    font-weight: darker;
-    font-size: 45px;
-    color: rgb(157, 21, 53);
-    text-shadow: 0.5px 1.5px 2px rgba(18, 1, 1, 0.9);
-    width: 20%;
-    height: 33.33%;
-    background-color: darkolivegreen;
-    background-repeat: repeat;
-    background-size: 100%;
-  }
-  
-  main p {
-    background-color: darkolivegreen;
-    padding: 30px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 23px;
-    line-height: 1.5;
-    color: bisque;
-    text-align: center;
-  }
-  
-  main li {
-    margin-left: 60px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-    Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 20px;
-    line-height: 1.5;
-    color: black;
-  }
-  main h3 {
-    background-color: darkolivegreen;
-    padding: 20px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 35px;
-    line-height: 1.5;
-    color: bisque;
-    margin-left: 20px;
-  }
+/* Header styling for the 'About' section */
+.About-header {
+  background-image: url("./Album/Icarus.jpg"); /* Background image for header */
+  padding: 80px; /* Add padding around the content */
+  text-align: center; /* Center-align the text */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Cover the full area with the image */
+  background-blend-mode: lighten; /* Blend image with lightened background */
+  font-family: freight-big-pro; /* Custom font family */
+  font-weight: lighter; /* Light font weight */
+  font-size: 28px; /* Font size for the header text */
+  color: DarkOliveGreen; /* Text color */
+}
 
-  .Contact h1 {
-    margin-left: 40px;
-    margin-bottom: 8px;
-    padding-top: 50px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 30px;
-    color: bisque;
-  }
-  .Contact p {
-    margin-left: 40px;
-    color: bisque;
-    font-size: 18px;
-  }
-  
-  .Links {
-    padding: 45px;
-    padding-bottom: 70px;
-    text-align: center;
-    background-color: darkolivegreen;
-  }
+/* Sub-header styling with flexible layout */
+.Sub-header {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  background-color: darkolivegreen; /* Background color */
+}
 
-  .Links h1 {
-    padding-bottom: 40px;
-    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-      Sylfaen, serif;
-    font-weight: lighter;
-    font-size: 22px;
-    color: bisque;
-  }
+/* Column styling for flex items */
+.column {
+  flex: 50%; /* Column takes 50% of the available width */
+  padding: 50px; /* Add padding inside the column */
+  text-align: center; /* Center-align text */
+  font-family: freight-big-pro; /* Font family */
+  font-weight: darker; /* Bold font weight */
+  font-size: 45px; /* Large font size */
+  color: rgb(157, 21, 53); /* Text color */
+  text-shadow: 0.5px 1.5px 2px rgba(18, 1, 1, 0.9); /* Text shadow for depth */
+  width: 20%; /* Set column width */
+  height: 33.33%; /* Set column height */
+  background-color: darkolivegreen; /* Background color */
+  background-repeat: repeat; /* Repeat background */
+  background-size: 100%; /* Scale background to 100% */
+}
 
-  html,
-  body,
-  body div,
-  span,
-  object,
-  iframe,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  abbr,
-  address,
-  cite,
-  code,
-  del,
-  dfn,
-  em,
-  img,
-  ins,
-  kbd,
-  q,
-  samp,
-  small,
-  strong,
-  sub,
-  sup,
-  var,
-  b,
-  i,
-  dl,
-  dt,
-  dd,
-  ol,
-  ul,
-  li,
-  fieldset,
-  form,
-  label,
-  legend,
-  table,
-  caption,
-  tbody,
-  tfoot,
-  thead,
-  tr,
-  th,
-  td,
-  article,
-  aside,
-  figure,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  section,
-  time,
-  mark,
-  audio,
-  video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
+/* Main paragraph styling */
+main p {
+  background-color: darkolivegreen; /* Set background color */
+  padding: 30px; /* Add padding around text */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif; /* Font family */
+  font-weight: lighter; /* Light font weight */
+  font-size: 23px; /* Font size */
+  line-height: 1.5; /* Line spacing */
+  color: bisque; /* Text color */
+  text-align: center; /* Center-align text */
+}
+
+/* List item styling */
+main li {
+  margin-left: 60px; /* Add left margin */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif; /* Font family */
+  font-weight: lighter; /* Light font weight */
+  font-size: 20px; /* Font size */
+  line-height: 1.5; /* Line spacing */
+  color: black; /* Text color */
+}
+
+/* Sub-header (h3) styling */
+main h3 {
+  background-color: darkolivegreen; /* Set background color */
+  padding: 20px; /* Add padding */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif; /* Font family */
+  font-weight: lighter; /* Light font weight */
+  font-size: 35px; /* Font size */
+  line-height: 1.5; /* Line spacing */
+  color: bisque; /* Text color */
+  margin-left: 20px; /* Add left margin */
+}
+
+/* Contact section heading */
+.Contact h1 {
+  margin-left: 40px; /* Add left margin */
+  margin-bottom: 8px; /* Add bottom margin */
+  padding-top: 50px; /* Add top padding */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif; /* Font family */
+  font-weight: lighter; /* Light font weight */
+  font-size: 30px; /* Font size */
+  color: bisque; /* Text color */
+}
+
+/* Contact section paragraph */
+.Contact p {
+  margin-left: 40px; /* Add left margin */
+  color: bisque; /* Text color */
+  font-size: 18px; /* Font size */
+}
+
+/* Social links section */
+.Links {
+  padding: 45px; /* Add padding */
+  padding-bottom: 70px; /* Add extra bottom padding */
+  text-align: center; /* Center-align content */
+  background-color: darkolivegreen; /* Background color */
+}
+
+/* Social links heading */
+.Links h1 {
+  padding-bottom: 40px; /* Add bottom padding */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif; /* Font family */
+  font-weight: lighter; /* Light font weight */
+  font-size: 22px; /* Font size */
+  color: bisque; /* Text color */
+}
+
+/* Reset margin, padding, and borders for consistent layout across browsers */
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0; /* Reset margins */
+  padding: 0; /* Reset padding */
+  border: 0; /* Remove borders */
+  outline: 0; /* Remove outlines */
+  font-size: 100%; /* Set default font size */
+  vertical-align: baseline; /* Set baseline alignment */
+  background: transparent; /* Remove background */
+}
